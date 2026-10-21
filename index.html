@@ -35,11 +35,11 @@
             </div>
 
             <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search"/>
+                <input class="form-control me-2" type="search" placeholder="Search" />
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
         </div>
-        
+
 
 
 
@@ -52,8 +52,8 @@
         <div class="card" style="width: 18rem">
             <img src="bootstrap.jpg" class="card-img-top">
             <div class="card-body">
-                <h3>Bootstrap CSS</h3>
-                <p>makes designer easier and faster than orthodox CSS writing</p>
+                <h3 class="card-title">Bootstrap CSS</h3>
+                <p class="card-text">makes designer easier and faster than orthodox CSS writing</p>
                 <a href="#" class="btn btn-info">Start Learning</a>
             </div>
         </div>
@@ -97,13 +97,78 @@
             <button class="btn-close" data-bs-dismiss="alert"></button>
         </div>
 
+        <hr>
         <!-- btn-group -->
         <div class="btn-group">
             <button type="button" class="btn btn-success">Button 1</button>
             <button type="button" class="btn btn-outline-info">Button 2</button>
             <button type="button" class="btn btn-outline-danger">Button 3</button>
         </div>
+        <hr>
     </div>
+
+    <br>
+
+    <hr>
+
+    <div class="container">
+        <h1> Grid system</h1>
+        <div class="row">
+            <div class="col bg-success">equal</div>
+            <div class="col bg-warning">equal</div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-xl-4 bg-info">4 column</div>
+            <div class="col-xl-8 bg-primary">8 column</div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6 col-xl-4 bg-success">club mid and xl size layout</div>
+            <div class="col bg-info">normal equal column as no size class</div>
+            <div class="col bg-warning">normal equal column as no size class</div>
+        </div>
+<br>
+
+        <div class="row align-items-end">
+            <div class="col bg-success">Text 1: Introduction to Bootstrap Grid System
+                Bootstrap Grid System is used to create responsive website layouts. It divides a webpage into rows and
+                columns. Bootstrap uses a 12-column grid system, which helps arrange content neatly. You can use classes
+                like .container, .row, and .col to create layouts. The grid system automatically adjusts the layout
+                according to screen size, making websites suitable for mobiles, tablets, and desktops.</div>
+            <div class="col bg-danger">Text 2: Rows and Columns
+                In Bootstrap, rows and columns are the main parts of the grid system. A .row is used to create a
+                horizontal group, while .col is used to place content inside it. For example, .col-6 takes up 6 out of
+                12 columns, which means half the available row width. You can use multiple columns in one row to display
+                content side by side. Bootstrap manages the spacing and alignment between columns.
+            </div>
+            <div class="col bg-primary">Text 3: Responsive Grid Classes
+                Bootstrap provides responsive classes to change layouts according to screen size. For example,
+                .col-sm-6, .col-md-4, and .col-lg-3 control column widths at different breakpoints. These classes help
+                create layouts that work well on different devices. You can display content in one column on mobile
+                screens and multiple columns on larger screens. This makes website design easier without writing many
+                media queries manually.
+            </div>
+            <div class="col bg-info">
+                Text 4: Important Things to Know About Bootstrap Grid System
+                Bootstrap Grid System is a flexible layout system used to design responsive websites. It is based on 12
+                columns, which means a row can be divided into different column sizes. For example, .col-6 takes half
+                the row, .col-4 takes one-third, and .col-3 takes one-fourth of the row width.
+                The grid system mainly uses three classes:
+                - .container — provides a responsive area for website content.
+                - .row — creates a horizontal group of columns.
+                - .col — defines a column for placing content.
+                Bootstrap also provides responsive breakpoint classes such as .col-sm-6, .col-md-4, and .col-lg-3. These
+                classes allow layouts to change depending on the screen size. The common breakpoints are sm (576px), md
+                (768px), lg (992px), xl (1200px), and xxl (1400px).
+                You can combine columns in different ways. For example, two .col-6 columns fit equally in one row, while
+                three .col-4 columns create three equal sections. If you use .col without a number, Bootstrap
+                automatically distributes the available width among the columns.
+            </div>
+        </div>
+    </div>
+    <hr>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
